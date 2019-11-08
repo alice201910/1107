@@ -12,5 +12,7 @@ public interface BoardMapper {
 	public List<BoardVO> listPage(PageDTO dto);
 	
 	public int countPage(PageDTO dto);
+
+	public BoardVO selectByBno(Integer bno);
 	
 }

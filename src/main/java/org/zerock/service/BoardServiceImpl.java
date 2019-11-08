@@ -41,4 +41,12 @@ public class BoardServiceImpl implements BoardService {
 	public int getListCount(PageDTO dto) {
 		return mapper.countPage(dto);
 	}
+
+
+
+	@Override
+	public BoardVO findByBno(Integer bno) {
+		
+		return mapper.selectByBno(bno);
+	}
 }
